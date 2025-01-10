@@ -120,7 +120,7 @@ public class FileProcessor {
                         doubleCount, minDouble, maxDouble, doubleSum, doubleSum / doubleCount);
             }
             if (stringCount > 0) {
-                System.out.printf("Strings: %d, Shortest: %d, Longest: %d%n",
+                System.out. printf("Strings: %d, Shortest: %d, Longest: %d%n",
                         stringCount, shortestString, longestString);
             }
         }

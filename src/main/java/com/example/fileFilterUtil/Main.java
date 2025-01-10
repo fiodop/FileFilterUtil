@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String outputPath = ".";
+        String outputPath = "C:\\Users\\artem\\IdeaProjects\\FileFilterUtil-master\\src\\main\\resources";
         String prefix = "";
         boolean appendMode = false;
         boolean shortStats = false;
@@ -56,20 +56,20 @@ public class Main {
             }
         }
 
-        System.out.printf("""
-                Params:
-                Path for results: %s
-                Prefix: %s
-                Append mode: %s
-                Short stats: %s
-                Full stats: %s
-                """,
-                outputPath,
-                prefix,
-                appendMode ? "enabled" : "disabled",
-                shortStats ? "enabled" : "disabled",
-                fullStats ? "enabled" : "disabled"
-        );
+//        System.out.printf("""
+//                Params:
+//                Path for results: %s
+//                Prefix: %s
+//                Append mode: %s
+//                Short stats: %s
+//                Full stats: %s
+//                """,
+//                outputPath,
+//                prefix,
+//                appendMode ? "enabled" : "disabled",
+//                shortStats ? "enabled" : "disabled",
+//                fullStats ? "enabled" : "disabled"
+//        );
 
         FileProcessor processor = new FileProcessor(outputPath, prefix, appendMode, shortStats, fullStats);
 
